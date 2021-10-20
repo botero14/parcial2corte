@@ -1,9 +1,8 @@
-//import Sequelize from 'sequelize';
-const Sequelize = require('sequelize')
+const Sequelize = require('sequelize');
 
 const DB_NAME = 'botero_parcial';
 const DB_USER = 'root';
-const DB_PASS = 'Pan123456';
+const DB_PASS = 'Pan123456'
 
 export const database = new Sequelize(
     DB_NAME,
@@ -12,11 +11,11 @@ export const database = new Sequelize(
     {
         host:'localhost',
         dialect:'mysql',
-        port:'3306'
+        port:'3306'  
     }
 );
 
-database.sync({force: true})
+database.sync({force:true})
     .then(function(){
-        console.log('La base de datos ha sisdo creadad con exito. ')
+        console.log("Base de datos creada.")
     });

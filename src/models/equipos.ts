@@ -1,4 +1,4 @@
-//import {Model,DataTypes} from 'sequelize'
+import {Model,DataTypes} from 'sequelize'
 const Sequelize = require('sequelize')
 import {database} from '../database/db'
 import {Manxequ} from './manxequs'
@@ -13,7 +13,6 @@ export interface EquiposI{
      modelo : string;
      
  }
-
 
 Equipos.init(
     {
@@ -30,7 +29,7 @@ Equipos.init(
     {
         tableName:"equipos",
         sequelize:database,
-        timestamps:true
+        timesstamps:true
     }
 );
 Equipos.hasMany(Manxequ);

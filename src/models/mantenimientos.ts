@@ -1,4 +1,4 @@
-//import {Model,DataTypes} from 'sequelize'
+import {Model,DataTypes} from 'sequelize'
 const Sequelize = require('sequelize')
 
 import {database} from '../database/db'
@@ -33,9 +33,9 @@ Mantenimiento.init(
 
     },
     {
-        tableName:"mantenimientos",
+        tableName:"mantenimiento",
         sequelize:database,
-        timestamps:true
+        timesstamps:true
     }
 );
 

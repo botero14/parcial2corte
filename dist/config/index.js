@@ -21,8 +21,11 @@ class App {
         this.port = port;
         this.routesPrev = new index_1.Routes();
         this.app = (0, express_1.default)();
+        this.settings();
+        this.middlewares();
+        this.routes();
     }
-    setting() {
+    settings() {
         this.app.set('port', this.port || 3000);
     }
     listen() {

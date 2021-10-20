@@ -16,8 +16,8 @@ Manxequ.init(
         
     },
     {
-        tableName:"manxequs",
+        tableName:"manxque",
         sequelize:database,
-        timestamps:true
+        timesstamps:true
     }
 );

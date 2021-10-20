@@ -3,7 +3,7 @@ import {EquiopoController} from '../controllers/equipos.controller'
 
 export class EquipoRoute{
     public equipoController: EquiopoController  = new EquiopoController();
-    public routes(app: Application){
-        //app.route('/mantenimiento').get(this.mantenimientoController.getMantenimiento)
+    public routes(app: Application): void{
+        app.route('/user').get(this.equipoController.getEquipo);
     }
 }
